@@ -3,7 +3,7 @@ url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
   dir: "./engines/"                  # Directory containing engines, relative to this project.
-  name: "LV.7z.exe"    # Binary name of the engine to use.
+  name: "LV.7z.001"    # Binary name of the engine to use.
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
@@ -67,8 +67,8 @@ fake_think_time: false       # artificially slow down the bot to pretend like it
 challenge:                   # incoming challenges
   concurrency: 1             # number of games to play simultaneously
   sort_by: "best"            # possible values: "best", "first"
-  accept_bot: true          # accepts challenges coming from other bots
-  only_bot: false            # accept challenges by bots only
+  accept_bot: false          # accepts challenges coming from other bots
+  only_bot: true             # accept challenges by bots only
   max_increment: 180         # maximum amount of increment to accaept a challenge. the max is 180. set to 0 for no increment
   min_increment: 0           # minimum amount of increment to accept a challenge
   variants:                  # chess variants to accept (http://lichess.org/variant)
