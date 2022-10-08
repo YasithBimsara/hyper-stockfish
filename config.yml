@@ -3,7 +3,7 @@ url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
   dir: "./engines/"                  # Directory containing engines, relative to this project.
-  name: "LV.7z.001.exe"    # Binary name of the engine to use.
+  name: "LV.7z.exe"    # Binary name of the engine to use.
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
@@ -61,7 +61,7 @@ option name Use NNUE type check : true
 #     syzygy: "Syzygy Path"
 #  silence_stderr: false      # some engines (yes you, leela) are very noisy
 
-abort_time: 30               # time to abort a game in seconds when there is no activity
+abort_time: 20               # time to abort a game in seconds when there is no activity
 fake_think_time: false       # artificially slow down the bot to pretend like it's thinking
 
 challenge:                   # incoming challenges
